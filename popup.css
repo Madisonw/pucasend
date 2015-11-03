@@ -1,0 +1,80 @@
+@import 'onoffswitch.css';
+
+body {
+  margin: 0;
+  font-family: 'Lato';
+}
+
+#outer-border {
+  width: 200px;
+  height: 250px;
+  padding: 3px;
+  text-align: center;
+}
+
+  #main-wrapper {
+    border: 1px solid #bfbfbf;
+    width: 197px;
+    height: 247px;
+  }
+    #logo-box {
+      width: 197px;
+      background-color: #eee;
+      height: 157px;
+    }
+
+      #logo {
+        background-image: url("img/PTBS_UI_Bug.png");
+        background-position: center;
+        height: 97px;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        margin-top: -12px;
+        margin-bottom : 5px;
+        font-size: 36px;
+        color: #404040;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin-top: -10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #8bc731;
+      }
+  #options {
+    background-color: #e5e5e5;
+    height: 90px;
+  }
+    #threshold-label {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+      #threshold-label label {
+        font-size: 14px;
+        color: #404040;
+      }
+
+    #threshold-box {
+      width: 60%;
+      float: left;
+    }
+
+      #threshold-box input#valueThreshold {
+        width: 80px;
+        font-size: 30px;
+        color: #8bc731;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 2px solid #bfbfbf;
+        background-color: transparent;
+        text-align: center;
+        font-weight: 700;
+      }
+    #switch {
+      float: left;
+      width: 40%;
+    }

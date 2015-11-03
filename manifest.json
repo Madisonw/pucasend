@@ -3,16 +3,16 @@
 
   "name": "Pucatrade Better Sending",
   "description": "This gives the user a way of highlighting trades with users that are above whatever threshold you want",
-  "version": "0.1",
+  "version": "1.0",
 
   "icons": { 
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png" 
+    "16": "img/PTBS_Icon_16_Active.png",
+    "48": "img/PTBS_Icon_48_Active.png",
+    "128": "img/PTBS_Icon_128_Active.png"
   },
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "img/PTBS_Icon_16_Active.png",
     "default_popup": "popup.html",
     "default_title": "Pucatrade Better Sending"
   },
@@ -20,7 +20,7 @@
   "content_scripts": [
     {
       "matches": ["https://pucatrade.com/trades*"],
-      "css": ["style.css"],
+      "css": ["pucatrade_mod.css"],
       "js": ["jquery.min.js", "pucatrade_better_sending.js"]
     }
   ],

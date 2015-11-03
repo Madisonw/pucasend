@@ -1,14 +1,34 @@
-<h2>
-	Pucatrade Better Sending
-</h2>
 
-<div>
-    <label for="onoff">On/Off</label> <input type="checkbox" name="onoff" id="onoff" />
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<div id="outer-border">
+  <div id="main-wrapper">
+    <div id="logo-box">
+      <div id="logo"></div>
+      <h1>Pucatrade</h1>
+      <h2>BETTER SENDING</h2>
+    </div>
+    <div id="options">
+      <div id="threshold-label">
+        <label>Value Threshold</label>
+      </div>
+      <div id="threshold-box">
+        <input type="text" name="valueThreshold" id="valueThreshold" />
+      </div>
+      <div id="switch">
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoff" checked>
+          <label class="onoffswitch-label" for="onoff">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+      </div>
+      </div>
+    </div>
   </div>
-  <div>
-    <label for="valueThreshold">Value Threshold </label><input type="number" name="valueThreshold" id="valueThreshold" />
-  </div>
-  <div id="status"></div>
-  <button id="save">Save</button>
+</div>
 
 <script src="options.js"></script>
